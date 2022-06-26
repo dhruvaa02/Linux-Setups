@@ -1,0 +1,88 @@
+salient setup
+make sure boot grub flag turned off and only boot flag on
+
+1. connect to internet
+2. sudo reflectuk
+3. sudo pacupd
+4. sudo pacupg
+5. yay -Syu
+6. yay -S pamac (3 aur)
+
+search default apps:
+file assocs, txt, plain, md to kwrite
+
+in pamac go to prefs and enable third party aur
+install nvidia, nvidiautils, nvidiasettings
+restart
+install egpuswitcher
+egpu-switcher config
+egpu-switcher setup
+restart
+pamac updates
+
+hold left click on desktop, change right click to standard menu, middle click for wallpaper
+
+launch feedback to none
+
+screen edges, corner, no action
+
+pamac -S fish
+sudo chsh -s /usr/bin/fish
+chsh -s `which fish`
+restart
+
+add wudgets icons only task manager, thrn edit panel remove normal task manager
+change panel to 38px
+remove useless pins
+
+pamac
+install apps:
+    google-chrome
+    discord
+    vscode/codium
+pin apps to taskbar
+
+pamac uninstall firefox
+
+open chrome, dont allow stats, turn on sync and sign in
+open discord, sign in, turn off startup in settings
+open vscode, go to settings, turn of telemetry, install python and live share extension, install sublime theme
+
+to install spotify:
+(last number, change to the key it says failed)
+gpg --keyserver keyserver.ubuntu.com --recv-keys D1742AD60D811D58
+then install pamac
+
+open spotify, change download location, restart app
+#install spicetify-cli pamac
+#sudo chmod a+wr /opt/spotify
+#sudo chmod a+wr /opt/spotify/Apps -R
+#
+#spicetify
+#spicetify backup apply enable-devtool
+#spicetify update
+#
+#close and reopen spotify
+#git clone https://github.com/morpheusthewhite/spicetify-themes.git
+#cd spicetify-themes
+#cp -r * ~/.config/spicetify/Themes
+#
+#cd "$(dirname "$(spicetify -c)")/Themes/Dribbblish"
+#mkdir -p ../../Extensions
+#
+#curl -fsSL https://raw.githubusercontent.com/JulienMaille/dribbblish-dynamic-theme/master/#install.sh | sh
+
+lutris - install league, close after download before logging in
+
+razer synapse:
+PATH="/usr/bin/:$PATH"
+yay -S openrazer-meta
+sudo gpasswd -a dhruvaa plugdev
+install razergenie in pamac
+restart
+
+for power savings when carrying laptop, sudo powertop autotune
+
+go to vmware folder, sh /bundle
+
+https://www.reddit.com/r/leagueoflinux/comments/fl9mri/installing_and_optimizing_league_of_legends_on/

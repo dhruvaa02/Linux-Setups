@@ -1,0 +1,37 @@
+sudo systemctl enable touchegg.service  
+sudo systemctl start touchegg.service  
+
+display res to 1920
+
+pamac enable aur -> chrome
+
+extensions:
+	- flypie
+	- screenshot tool
+	- user themes
+	- wobbly windows
+	- tiling assistant
+	- sound input & output device chooser
+	- bluettoth quick connect
+	- weather in the clock
+	
+pamac:
+	- discord: turn off auto start
+	- spotify
+		(last number, change to the key it says failed)
+		gpg --keyserver keyserver.ubuntu.com --recv-keys D1742AD60D811D58
+	- lutris
+	- steam
+	- vscode
+	- 
+
+tela circle icon -> extract to ~/.icons
+change switch windows shortcut to alt tab
+change gedit colour
+
+razer:
+aur - openrazer-meta
+	- linux-headers (for specific kernel number)
+	- polychromatic
+sudo gpasswd -a dhruvaa plugdev 
+reboot

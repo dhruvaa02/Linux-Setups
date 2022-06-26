@@ -1,0 +1,36 @@
+display -> 1920x1080, 100% scale, disabl hidpi both settings
+add xps, winter sem, cv, to bookmarks
+popshop -> updates, sudo apt update, sudo apt upgrade
+
+egpu: https://github.com/hertg/egpu-switcher, change display settings
+
+sudo apt install gnome-tweaks -> area in touchpad, top bar: battery and weekday, titlebars: maximise, centre new windows
+
+in mouse settings -> touchpad natural scrolling, turn off acceleration in mouse
+
+install chrome: from firefox download deb, no auto send, sudo apt purge firefox
+
+go to extensions: 
+	- user themes: mkdir ~/.themes, go to gnome look and download themes and move to folder
+		whitesur dark solid, tela circle blue in .icons, chromsos dark shell, orchis dark applications
+	- compiz window effect
+	- sound input ouput chooser
+	- bluetooth quick connect
+	- x11 gestures
+	- dash to panel: put to top, turn off buttons, remove useless apps, reduce thickness
+	- weather in the clock
+	- just perfection: animation speed fastest
+	- ui imporvements
+	- tiling assistant
+	- screenshot tool
+	
+ turn off cosmic workspaces extensions
+ 
+ sudo apt install fish
+ chsh -s `which fish`
+ 
+ openrazer, follow isntructions, install polychromatic, sudo gpasswd -a dhruvaa plugdev
+ 
+ https://pipewire-debian.github.io/pipewire-debian/
+ 
+change super + l to lock in shortcuts settings

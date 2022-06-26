@@ -1,0 +1,63 @@
+manjaro setup
+
+global theme to dark
+icons only application
+
+in pamac go to prefs and enable third party aur
+install egpuswitcher
+egpu-switcher config
+egpu-switcher setup
+restart
+
+launch feedback to none
+desktop effects wobbly
+
+pacman -S fish
+sudo chsh -s /usr/bin/fish
+chsh -s `which fish`
+restart
+
+add wudgets icons only task manager, thrn edit panel remove normal task manager
+change panel to 38px
+remove useless pins
+
+pamac
+install apps:
+    google-chrome
+    discord - turn off linux settings startup
+    vscode/codium (visual-studio-code-bin)
+    slack-desktop
+    zoom
+    typora - theme night, autosave, display source, , inline math support subscript, superscript
+    jetbrains-toolbox - remove from autostart,download intellij, pycharm
+    R, Rsutdio, Latex - sudo pacman -S r, sudo archlinux-java set java-8-openjdk & pamac install rstudio-desktop, sudo pacman -Syyu texlive-most (unlink("/home/me/src/Rlibs/00LOCK-Rcpp", recursive = TRUE) if failed to lock)
+    Texstudio
+
+pin apps to taskbar
+
+to install spotify:
+(last number, change to the key it says failed)
+gpg --keyserver keyserver.ubuntu.com --recv-keys D1742AD60D811D58
+then install pamac
+
+open spotify, change download location, restart app
+
+
+uninstall firefox
+
+lutris - install league, close after download before logging in
+
+razer synapse:
+sudo groupadd plugdev
+sudo gpasswd -a dhruvaa plugdev
+pamac install openrazer-meta
+install razergenie in pamac
+restart
+
+go to vmware folder, sh /bundle
+if kernel not found : mhwd-kernel -li   and then sudo pacman -Syu 5.13.19-2-headers dkms
+sudo modprobe -a vmw_vmci vmmon
+
+open chrome, dont allow stats, turn on sync and sign in
+open discord, sign in, turn off startup in settings
+open vscode, go to settings, turn of telemetry, install python and live share extension, install sublime theme

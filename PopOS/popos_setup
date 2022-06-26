@@ -1,0 +1,101 @@
+INSTALLING POP OS SOMETIMES REMOVES FILES EVEN IF NOT FORMATTED KEEP IN MIND
+DOWNLOAD FILES TO EXTERNAL DRIVE AND COPY BACK IN
+
+install pop os:
+	format boot partition fat32
+	format / root with ext4
+	DO NOT FORMAT /xps mount with ext4
+	
+	startup: choose dock with no edges, clock on right
+
+# General Updates
+sudo apt update
+sudo apt upgrade
+turn display settings to 1920x1080
+
+# Tweaks
+sudo apt install gnome-tweaks
+open tweaks -> keyboard&mouse -> mouse click emulation area right click
+				 
+	    -> Window Titlebars -> show maximise 
+	    -> Windows -> centre new windows
+	    
+install chrome (search up download deb from firefox) https://www.google.com/chrome/fast-and-secure/?platform=linux
+sudo apt purge firefox
+
+go to gnome extensions website and add:
+	- user themes
+	- gsconnect
+		pair device from kde connect phone app
+		turn off volume control
+	- sound input & output device chooser
+	- dash to panel:
+		turn off dock in desktop settings
+		#1
+		change panel thickness to 40px
+		#2
+		animate hovering app icons
+		turn off applications and workspaces etc
+	- arcmenu:
+		sudo apt-get install gir1.2-gmenu-3.0
+		turn off default applications menu, panel to dock settings -> make applications not visible
+		change arcmenu settings shortcut to super + space
+	- screenshot tool
+	- tiling assistant
+	- bluetooth quick connect
+	-openweather
+	-compiz windows effect
+		
+		
+	   
+	   
+# Applications
+Download chrome debian and install with eddy:
+	do not send stats
+	sign in and sync with google acc
+	sudo apt purge firefox
+download discord debian (or popshop)
+	turn off startup in discord settings -> linux settings
+spotify: https://www.spotify.com/us/download/linux/
+popshop lutris, steam, vscode (turn off telemetry, create and activate venv https://code.visualstudio.com/docs/python/python-tutorial, python, live share, sublime theme)
+pycharm: sudo tar -xzf jetbrains-toolbox-1.17.7391.tar.gz -C /opt
+
+	
+# System settings
+Go to settings -> Desktop -> Dock
+	Turn off icons
+	custom size 40px
+settings -> mouse&touchpad -> touchpad natural scrolling
+remove favourites from dock, add chrome
+turn off workspaces and applications buttons
+
+# Misc
+egpu switcher: https://github.com/hertg/egpu-switcher egpu-swticher config/setup/cleanup
+razer synapse:https://openrazer.github.io/
+	sudo gpasswd -a dhruvaa plugdev
+razergenie: https://software.opensuse.org//download.html?project=hardware%3Arazer&package=razergenie
+fish: sudo apt install fish
+chsh -s `which fish`
+
+
+gdm_background:
+https://github.com/thiggy01/gdm-background/releases
+install the debian and use the gui
+
+startup apps: disable unecessary
+
+vmwareplayer in utilities sh run bundle
+
+change wallpaper/user icon
+
+install r/latex/typora
+
+redshift:
+sudo apt install redshift redshift-gtk
+sudo apt-get install geoclue-2.0
+create redshift.conf file at  ~/.config/redshift.conf
+sample conf: https://raw.githubusercontent.com/jonls/redshift/master/redshift.conf.sample
+redshift -t 7000:7000 if needed
+
+pipewire:
+https://pipewire-debian.github.io/pipewire-debian/

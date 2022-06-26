@@ -1,0 +1,21 @@
+- Change sudo nano /etc/dnf/dnf.conf, and add these lines
+
+max_parallel_downloads=10
+defaultyes=True
+
+- sudo dnf update
+- sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+
+- sudo dnf groupupdate core
+- sudo dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
+- sudo dnf groupupdate sound-and-video
+
+- reboot
+- change to dark mode, display res to 1920, turn off hot corners, turn on touchpad tap to click
+- sudo dnf install lpf-spotify-client
+
+
+- install chrome, extensions/extensions manager, spotify, discord, gnome-tweaks,
+- change chrome to be dark manually for some reason
+
+- tweaks, turn on area right click, centre new windows, maximise and min buttons
